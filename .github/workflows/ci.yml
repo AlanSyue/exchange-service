@@ -17,13 +17,12 @@ jobs:
       - uses: actions/checkout@v2
 
       - uses: php-actions/composer@v5
+        run: cd src/
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v2
-        env:
-          TEST_NAME: Scarlett
         with:
           bootstrap: vendor/autoload.php
-          configuration: test/phpunit.xml
+          configuration: src/phpunit.xml
           args: --coverage-text
     
