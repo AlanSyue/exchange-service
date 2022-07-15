@@ -18,7 +18,6 @@ jobs:
 
       - name: Install composer
         uses: php-actions/composer@v5
-        run: "cd src/"
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v2
