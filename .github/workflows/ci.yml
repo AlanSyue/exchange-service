@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  pull_request_target:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: src
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: "ramsey/composer-install@v2"
+        with:
+          working-directory: "src"
+
+      - name: PHPUnit Tests
+        run: |
+          ./vendor/bin/phpunit -c phpunit.xml
+        shell: bash
+    
