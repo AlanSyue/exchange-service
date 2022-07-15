@@ -63,7 +63,7 @@ class CurrencyControllerTest extends TestCase
                     ],
                 ],
             ],
-            'Exchange JPY to USD success' => [
+            'Exchange JPY to USD success 1' => [
                 'data' => [
                     'from' => Currency::JPY,
                     'to' => Currency::USD,
