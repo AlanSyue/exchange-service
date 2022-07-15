@@ -21,9 +21,8 @@ jobs:
           working-directory: "src"
 
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@v2
-        with:
-          bootstrap: vendor/autoload.php
-          configuration: src/phpunit.xml
-          args: --coverage-text
+        run: |
+          ls
+          ./vendor/bin/phpunit phpunit.xml
+        shell: bash
     
