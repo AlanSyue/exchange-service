@@ -1,4 +1,4 @@
-# Currencies Exchange Service 1
+# Currencies Exchange Service 2
 
 # Requirement
 docker and docker-compose: https://www.docker.com/products/docker-desktop
