@@ -11,7 +11,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: src
+        working-directory: ./src
 
     steps:
     - name: Checkout
@@ -28,6 +28,7 @@ jobs:
         
     - name: Use composer
       uses: php-actions/composer@v5
+      
       
     - name: List files in the repository
       run: |
