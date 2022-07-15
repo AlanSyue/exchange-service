@@ -16,7 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: php-actions/composer@v5
+      - name: Install composer
+        uses: php-actions/composer@v5
+        run: "cd src/"
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v2
