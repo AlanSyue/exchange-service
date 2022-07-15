@@ -23,6 +23,6 @@ jobs:
       - name: PHPUnit Tests
         run: |
           ls
-          ./vendor/bin/phpunit phpunit.xml
+          ./vendor/bin/phpunit -c phpunit.xml
         shell: bash
     
