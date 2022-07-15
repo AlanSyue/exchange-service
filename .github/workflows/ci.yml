@@ -21,6 +21,17 @@ jobs:
 
     - name: Use composer
       uses: php-actions/composer@v5
+      
+    - name: List files in the repository
+      run: |
+        ls ${{ github.workspace }}
+        
+    - name: Use composer
+      uses: php-actions/composer@v5
+      
+    - name: List files in the repository
+      run: |
+        ls ${{ github.workspace }}
 
     - name: PHPUnit tests
       uses: php-actions/phpunit@v3
