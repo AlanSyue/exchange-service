@@ -16,8 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install composer
-        uses: php-actions/composer@v5
+      - uses: "ramsey/composer-install@v2"
+        with:
+          working-directory: "src"
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v2
