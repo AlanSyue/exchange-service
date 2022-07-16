@@ -7,6 +7,7 @@ docker and docker-compose: https://www.docker.com/products/docker-desktop
 ## Set up the container.
 ```bash
 $ cd docker/
+$ cp .env.example .env
 $ docker compose up -d
 ```
 
@@ -16,6 +17,7 @@ $ cd docker/
 $ docker compose exec workspace sh
 $ cp .env.example .env
 $ composer install
+$ php artisan key:generate
 ```
 
 ## Access to the website.
